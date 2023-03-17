@@ -6,7 +6,7 @@ Public Class DBapi
     Public Function postRegistroPersonas(headers As List(Of Parametros), parametros As List(Of Parametros), objeto As Object) As String
             Dim Client = New RestClient()
             Dim response
-        Dim url As String = "http://localhost:4000/api/personas/"
+        Dim url As String = "https://restapi-nodejs-express-mysql-th14.onrender.com/personas/"
         Client.BaseUrl = New Uri(url)
 
             Dim request = New RestRequest()
@@ -31,7 +31,7 @@ Public Class DBapi
 
     Public Function getGeneros(headers As List(Of Parametros), parametros As List(Of Parametros)) As String
         Dim Client = New RestClient()
-        Dim url As String = "http://localhost:4000/api/consultarGeneros"
+        Dim url As String = "https://restapi-nodejs-express-mysql-th14.onrender.com/api/consultarGeneros"
         Dim response
         Client.BaseUrl = New Uri(url)
 
@@ -53,7 +53,7 @@ Public Class DBapi
 
     Public Function getTiposDocumentos(headers As List(Of Parametros), parametros As List(Of Parametros)) As String
         Dim Client = New RestClient()
-        Dim url As String = "http://localhost:4000/api/tipodocumento/"
+        Dim url As String = "https://restapi-nodejs-express-mysql-th14.onrender.com/api/tipodocumento/"
         Dim response
         Client.BaseUrl = New Uri(url)
 
@@ -75,7 +75,7 @@ Public Class DBapi
 
     Public Function getPersonas(headers As List(Of Parametros), parametros As List(Of Parametros)) As String
         Dim Client = New RestClient()
-        Dim url As String = "http://localhost:4000/api/consultarPersonas"
+        Dim url As String = "https://restapi-nodejs-express-mysql-th14.onrender.com/api/consultarPersonas"
         Dim response
         Client.BaseUrl = New Uri(url)
 
@@ -97,7 +97,7 @@ Public Class DBapi
 
     Public Function getTotalM(headers As List(Of Parametros), parametros As List(Of Parametros)) As String
         Dim Client = New RestClient()
-        Dim url As String = "http://localhost:4000/api/consultarM"
+        Dim url As String = "https://restapi-nodejs-express-mysql-th14.onrender.com/api/consultarM"
         Dim response
         Client.BaseUrl = New Uri(url)
 
@@ -119,7 +119,7 @@ Public Class DBapi
 
     Public Function getTotalH(headers As List(Of Parametros), parametros As List(Of Parametros)) As String
         Dim Client = New RestClient()
-        Dim url As String = "http://localhost:4000/api/consultarH"
+        Dim url As String = "https://restapi-nodejs-express-mysql-th14.onrender.com/api/consultarH"
         Dim response
         Client.BaseUrl = New Uri(url)
 
@@ -141,7 +141,7 @@ Public Class DBapi
 
     Public Function getPromedio(headers As List(Of Parametros), parametros As List(Of Parametros)) As String
         Dim Client = New RestClient()
-        Dim url As String = "http://localhost:4000/api/consultarPromedio"
+        Dim url As String = "https://restapi-nodejs-express-mysql-th14.onrender.com/api/consultarPromedio"
         Dim response
         Client.BaseUrl = New Uri(url)
 
@@ -163,7 +163,7 @@ Public Class DBapi
 
     Public Function getNombreMayor(headers As List(Of Parametros), parametros As List(Of Parametros)) As String
         Dim Client = New RestClient()
-        Dim url As String = "http://localhost:4000/api/consultarMayor"
+        Dim url As String = "https://restapi-nodejs-express-mysql-th14.onrender.com/api/consultarMayor"
         Dim response
         Client.BaseUrl = New Uri(url)
 
